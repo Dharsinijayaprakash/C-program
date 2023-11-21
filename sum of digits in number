@@ -1,0 +1,15 @@
+//sum of digits in a number
+#include <stdio.h>
+int main()
+{
+    int l,sum=0,k;
+    scanf("%d",&l);
+    while(l>0)
+    {
+        k=l%10;
+        sum=sum+k;
+        l=l/10;
+    }
+    printf("sum is %d",sum);
+    return 0;
+}
